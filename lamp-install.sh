@@ -124,3 +124,5 @@ for link in ${links[@]}; do
     dir_name=${dir_name%%.tar*}
     rm dir_name -rf
 done
+
+exit
