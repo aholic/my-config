@@ -12,12 +12,12 @@ php_path="${default_install_path}/php"
 
 #download links for apr, apr-util, pcre, httpd
 links[0]='http://supergsego.com/apache//apr/apr-1.5.1.tar.gz'
-links[1]='http://supergsego.com/apache//apr/apr-util-1.5.3.tar.gz'
-links[2]='ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.35.tar.gz'
-links[3]='http://apache.osuosl.org//httpd/httpd-2.4.9.tar.gz'
-links[4]='http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.19.tar.gz'
-links[5]='ftp://xmlsoft.org/libxml2/libxml2-2.9.1.tar.gz'
-links[6]='http://cn2.php.net/distributions/php-5.5.14.tar.gz'
+links[1]='http://supergsego.com/apache//apr/apr-util-1.5.4.tar.gz'
+links[2]='ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.36.tar.gz'
+links[3]='http://apache.osuosl.org//httpd/httpd-2.4.10.tar.gz'
+links[4]='http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.21.tar.gz'
+links[5]='ftp://xmlsoft.org/libxml2/libxml2-2.9.2.tar.gz'
+links[6]='http://cn2.php.net/distributions/php-5.6.2.tar.gz'
 
 for link in ${links[@]}; do
     echo "Downloading ${link##*/} ..."
