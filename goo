@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "USAGE: goo project_name"
+    exit
+fi
+
+mkdir $1
+cur=`pwd`
+
+cd $1
+mkdir src
+mkdir pkg
+mkdir bin
+echo "export GOPATH=$cur/$1:\$GOPATH" >> ~/.profile
+source ~/.profile
+
+cd $cur
